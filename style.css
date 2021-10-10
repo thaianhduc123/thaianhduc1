@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ================================================================= */
+.form-container {
+  background-color: #afafaf;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  min-height: 200px;
+  background-color: #ffffff;
+  align-self: center;
+  text-align: center;
+  height: fit-content;
+  box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+  border-radius: 15px;
+  padding: 20px 40px 20px;
+}
+
+.form-group {
+  margin: 0 30px;
+  position: relative;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 2px;
+  padding-left: 5px;
+}
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid #b3b3b3;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  outline: none;
+  cursor: pointer;
+}
+.form-input:hover {
+  border-color: rgb(8, 204, 211);
+}
+.form-input:hover::-webkit-input-placeholder {
+  color: black;
+}
+.form-img {
+  background-image: url("./avatar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 2px solid black;
+  margin-bottom: 15px;
+}
+.form-img:hover {
+  border: 2px solid black;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+.form-img:not(:hover) {
+  transition: all 0.5s ease-in-out;
+}
